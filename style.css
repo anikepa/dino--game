@@ -1,0 +1,88 @@
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+
+   html,
+   body {
+       background-color: #111;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+   }
+
+   .game {
+       background-color: #fff;
+
+       overflow: hidden;
+       width: 50%;
+       height: 60%;
+       border: 5px solid black;
+       position: relative;
+   }
+
+   .block {
+       width: 40px;
+       height: 80px;
+       background-color: black;
+       position: absolute;
+       bottom: 0;
+       left: 718px;
+       animation: bloc 2s linear infinite;
+   }
+
+   @keyframes bloc {
+       0% {
+           left: 900PX;
+       }
+
+       100% {
+           left: -10%;
+       }
+   }
+
+   .dino {
+       position: absolute;
+       top: 350px;
+   }
+
+   img {
+       height: 90px;
+
+   }
+
+   .result {
+       color: white;
+   }
+
+   .restart {
+
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       border-radius: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       display: none;
+   }
+
+   .restart h1 {
+       color: green;
+       font-size: 2.5vw;
+
+   }
+
+   .restart button {
+       margin-left: 52px;
+       width: 100px;
+       height: 30px;
+       border-radius: 20px;
+       background-color:black;
+       color: white;
+   }
